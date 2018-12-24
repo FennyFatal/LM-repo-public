@@ -1,0 +1,233 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Platforms\ORBIS\Microsoft.CppBuild.orbis.targets(86,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Platforms\ORBIS\Microsoft.CppBuild.orbis.targets(100,5): warning MSB8028: The intermediate directory (ORBIS_Debug\) contains files shared from another project (libPS4Unjail.vcxproj, NativePluginPS4Example.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  kernel.c
+  UnityPrxPlugin.cpp
+  pluginLib.cpp
+C:\Users\sethk\Desktop\loader\pluginLib.cpp(1,9): warning : #pragma once in main file [-Wpragma-once-outside-header]
+  pluginunjail.cpp
+  In file included from C:\Users\sethk\Desktop\loader\pluginunjail.cpp:4:
+  In file included from C:\Users\sethk\Desktop\loader/unjail.h:5:
+C:\Users\sethk\Desktop\loader/lv2.h(27,45): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(28,48): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(29,50): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(168,2): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(302,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(305,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(313,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(316,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(319,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(322,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(325,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(328,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(331,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(333,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(336,1): warning : '/*' within block comment [-Wcomment]
+  In file included from C:\Users\sethk\Desktop\loader\pluginunjail.cpp:9:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK\libPS4\include\ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(5,9): warning : 'PAGE_SIZE' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\machine/param.h(98,9):  note: previous definition is here
+C:\Users\sethk\Desktop\loader\pluginunjail.cpp(113,1): warning : control reaches end of non-void function [-Wreturn-type]
+  prx.cpp
+  In file included from C:\Users\sethk\Desktop\loader\prx.cpp:9:
+  In file included from C:\Users\sethk\Desktop\loader/unjail.h:5:
+C:\Users\sethk\Desktop\loader/lv2.h(27,45): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(28,48): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(29,50): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(168,2): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(302,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(305,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(313,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(316,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(319,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(322,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(325,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(328,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(331,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(333,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(336,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader\prx.cpp(196,11): warning : empty parentheses interpreted as a function declaration [-Wvexing-parse]
+  C:\Users\sethk\Desktop\loader\prx.cpp(196,11):  note: replace parentheses with an initializer to declare a variable
+C:\Users\sethk\Desktop\loader\prx.cpp(197,1): warning : control reaches end of non-void function [-Wreturn-type]
+C:\Users\sethk\Desktop\loader\prx.cpp(227,1): warning : control reaches end of non-void function [-Wreturn-type]
+C:\Users\sethk\Desktop\loader\prx.cpp(314,1): warning : control reaches end of non-void function [-Wreturn-type]
+  syscall.cpp
+  unjail.c
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:10:
+  In file included from C:\Users\sethk\Desktop\loader/unjail.h:5:
+C:\Users\sethk\Desktop\loader/lv2.h(27,45): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(28,48): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(29,50): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(168,2): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(302,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(305,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(313,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(316,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(319,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(322,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(325,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(328,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(331,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(333,1): warning : '/*' within block comment [-Wcomment]
+C:\Users\sethk\Desktop\loader/lv2.h(336,1): warning : '/*' within block comment [-Wcomment]
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:17:
+C:\Users\sethk\Desktop\loader/definess.h(67,9): warning : 'PAGE_SIZE' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\machine/param.h(98,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(5,9): warning : 'PAGE_SIZE' macro redefined [-Wmacro-redefined]
+  C:\Users\sethk\Desktop\loader/definess.h(67,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(7,9): warning : 'PROT_CPU_READ' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/mman.h(64,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(8,9): warning : 'PROT_CPU_WRITE' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/mman.h(65,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(9,9): warning : 'PROT_CPU_EXEC' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/mman.h(66,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(11,9): warning : 'PROT_GPU_READ' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/mman.h(68,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(12,9): warning : 'PROT_GPU_WRITE' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/mman.h(69,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(14,9): warning : 'PROT_NONE' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/mman.h(60,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(15,9): warning : 'PROT_READ' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/mman.h(61,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(16,9): warning : 'PROT_WRITE' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/mman.h(62,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(17,9): warning : 'PROT_EXEC' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/mman.h(63,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(19,9): warning : 'MAP_SHARED' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/mman.h(76,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(20,9): warning : 'MAP_PRIVATE' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/mman.h(77,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(22,9): warning : 'MAP_FIXED' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/mman.h(85,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(23,9): warning : 'MAP_ANONYMOUS' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/mman.h(104,9):  note: previous definition is here
+  In file included from C:\Users\sethk\Desktop\loader\unjail.c:36:
+  In file included from C:\Users\sethk\Desktop\loader/Modded_SDK/libPS4/include/ps4.h:7:
+C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(26,9): warning : 'MAP_FAILED' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/mman.h(132,9):  note: previous definition is here
+C:\Users\sethk\Desktop\loader\unjail.c(583,9): warning : 'PATH_MAX' macro redefined [-Wmacro-redefined]
+  C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys/syslimits.h(74,9):  note: previous definition is here
+C:\Users\sethk\Desktop\loader\unjail.c(625,9): warning : 'PAGE_SIZE' macro redefined [-Wmacro-redefined]
+  C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4\include/memory.h(5,9):  note: previous definition is here
+C:\Users\sethk\Desktop\loader\unjail.c(666,18): warning : implicit declaration of function 'syscall4' is invalid in C99 [-Wimplicit-function-declaration]
+C:\Users\sethk\Desktop\loader\unjail.c(671,18): warning : implicit declaration of function 'syscall1' is invalid in C99 [-Wimplicit-function-declaration]
+C:\Users\sethk\Desktop\loader\unjail.c(677,18): warning : implicit declaration of function 'syscall3' is invalid in C99 [-Wimplicit-function-declaration]
+C:\Users\sethk\Desktop\loader\unjail.c(727,9): warning : implicit declaration of function 'reallocf' is invalid in C99 [-Wimplicit-function-declaration]
+C:\Users\sethk\Desktop\loader\unjail.c(727,7): warning : incompatible integer to pointer conversion assigning to 'struct iovec *' from 'int' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(751,8): warning : unused variable 'initMessage11w221' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(852,22): warning : format specifies type 'unsigned long' but the argument has type 'unsigned char *' [-Wformat]
+C:\Users\sethk\Desktop\loader\unjail.c(989,9): warning : '__mmap_self_0' macro redefined [-Wmacro-redefined]
+  C:\Users\sethk\Desktop\loader\unjail.c(988,9):  note: previous definition is here
+C:\Users\sethk\Desktop\loader\unjail.c(1020,9): warning : 'KERN_FILEPATH' macro redefined [-Wmacro-redefined]
+  C:\Users\sethk\Desktop\loader/definess.h(69,9):  note: previous definition is here
+C:\Users\sethk\Desktop\loader\unjail.c(1122,23): warning : incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'const void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1122,30): warning : incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1127,10): warning : incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1150,23): warning : incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'const void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1150,30): warning : incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1155,10): warning : incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1141,8): warning : unused variable 'copyin' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(1084,16): warning : unused variable 'cred' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(1085,19): warning : unused variable 'fd' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(1254,7): warning : unused variable 'printfkernel' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(1341,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1366,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1406,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1439,3): warning : implicit declaration of function 'cpu_disable_wp' is invalid in C99 [-Wimplicit-function-declaration]
+C:\Users\sethk\Desktop\loader\unjail.c(1476,3): warning : implicit declaration of function 'cpu_enable_wp' is invalid in C99 [-Wimplicit-function-declaration]
+C:\Users\sethk\Desktop\loader\unjail.c(1508,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1533,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1580,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1589,1): warning : control reaches end of non-void function [-Wreturn-type]
+C:\Users\sethk\Desktop\loader\unjail.c(1624,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1649,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1696,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1734,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1759,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1813,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1839,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1859,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1924,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1969,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1994,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2053,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(1932,19): warning : unused variable 'fd' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(1936,9): warning : unused variable 'got_rootvnode' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(1931,16): warning : unused variable 'cred' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(1935,9): warning : unused variable 'got_prison0' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(2110,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2150,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2078,12): warning : unused variable 'sceRegMgrSetInt' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(2212,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2237,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2291,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2329,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2354,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2408,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2419,19): warning : incompatible pointer to integer conversion passing 'char [19]' to parameter of type 'int64_t' (aka 'long') [-Wint-conversion]
+  C:\Users\sethk\Desktop\loader\unjail.c(675,34):  note: passing argument to parameter 'moduleHandle' here
+C:\Users\sethk\Desktop\loader\unjail.c(2458,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2483,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2535,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2571,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2596,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2648,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2684,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2709,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2761,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2797,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2822,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2872,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2908,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2933,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2982,14): warning : incompatible integer to pointer conversion returning 'int' from a function with result type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(2988,10): warning : unused variable 'mmap_self' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(3072,11): warning : unused variable 'ptrKernel' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(3071,10): warning : unused variable 'mmap_self' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(3148,1): warning : control reaches end of non-void function [-Wreturn-type]
+C:\Users\sethk\Desktop\loader\unjail.c(3623,18): warning : incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(3646,7): warning : unused variable 'copyout' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(3645,7): warning : unused variable 'printfkernel' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(3759,11): warning : incompatible pointer to integer conversion initializing 'uint64_t' (aka 'unsigned long') with an expression of type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(3765,21): warning : incompatible pointer to integer conversion assigning to 'uint64_t' (aka 'unsigned long') from 'uint64_t *' (aka 'unsigned long *'); dereference with * [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(3812,13): warning : incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'const void *' [-Wint-conversion]
+  C:\Users\sethk\Desktop\loader\unjail.c(57,35):  note: passing argument to parameter 'buf' here
+C:\Users\sethk\Desktop\loader\unjail.c(3776,24): warning : unused variable 'pkey' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(3773,11): warning : unused variable 'pos' [-Wunused-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(3842,11): warning : incompatible pointer to integer conversion initializing 'uint64_t' (aka 'unsigned long') with an expression of type 'void *' [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(3851,21): warning : incompatible pointer to integer conversion assigning to 'uint64_t' (aka 'unsigned long') from 'uint64_t *' (aka 'unsigned long *'); dereference with * [-Wint-conversion]
+C:\Users\sethk\Desktop\loader\unjail.c(3889,13): warning : incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'const void *' [-Wint-conversion]
+  C:\Users\sethk\Desktop\loader\unjail.c(57,35):  note: passing argument to parameter 'buf' here
+C:\Users\sethk\Desktop\loader\unjail.c(3897,9): warning : incompatible integer to pointer conversion passing 'uint64_t' (aka 'unsigned long') to parameter of type 'void *' [-Wint-conversion]
+  C:\Users\sethk\Desktop\loader\unjail.c(123,18):  note: passing argument to parameter 'addr' here
+C:\Users\sethk\Desktop\loader\unjail.c(47,18): warning : unused variable 'PAGE_SZ' [-Wunused-const-variable]
+C:\Users\sethk\Desktop\loader\unjail.c(759,12): warning : unused function 'mount_large_fs' [-Wunused-function]
+  new.S
+  NativePluginPS4Example.vcxproj -> C:\Users\sethk\Desktop\loader\HomebrewWIP.prx
