@@ -67,14 +67,12 @@ int off_mount_rw();
 void ftps4_fini();
 int FTPS();
 int elfloadernote();
-int elfloader();
-int loadElfFile();
 int loadElfFileelf();
 int loadElfFilebin();
 int cantfindelfs();
-int loadElfFileself();
+//int loadElfFileself();
 int loadElfFileselfz();
 int sample2note();
 int sample1note();
-int tryweb();
 int pkgdl();
+ 

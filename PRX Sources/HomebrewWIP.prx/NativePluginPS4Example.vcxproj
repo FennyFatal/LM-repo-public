@@ -65,7 +65,7 @@
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
       <OptimizationLevel>Level2</OptimizationLevel>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <AdditionalIncludeDirectories>C:\Users\sethk\Desktop\HomebrewDump\libweb;c:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\;C:\Users\sethk\Desktop\HomebrewDump\elfloader;C:\Users\sethk\Desktop\HomebrewDump\Modded_SDK\libPS4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./libweb;c:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\;./elfloader;./Modded_SDK\libPS4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>C:\Users\sethk\Desktop\loader;C:\Program Files %28x86%29\SCE\ORBIS SDKs\4.500\target\lib;C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -74,13 +74,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\HomebrewDump2\elfloader\jailbreak.c" />
-    <ClCompile Include="..\HomebrewDump2\elfloader\main.c" />
-    <ClCompile Include="..\HomebrewDump2\elfloader\network.c" />
-    <ClCompile Include="..\HomebrewDump2\elfloader\server.c" />
-    <ClCompile Include="..\HomebrewDump2\elfloader\syscalls.S" />
-    <ClCompile Include="..\HomebrewDump2\elfloader\util.c" />
-    <ClCompile Include="..\HomebrewDump\libweb\webvita.c" />
     <ClCompile Include="Modded_SDK\libPS4\source\kernel.c" />
     <ClCompile Include="new.S" />
     <ClCompile Include="PlayerInterface\UnityPrxPlugin.cpp" />
@@ -95,12 +88,6 @@
   <ItemGroup>
     <ClInclude Include="..\HomebrewDump2\elfloader\common.h" />
     <ClInclude Include="..\HomebrewDump2\elfloader\elf.h" />
-    <ClInclude Include="..\HomebrewDump2\elfloader\jailbreak.h" />
-    <ClInclude Include="..\HomebrewDump2\elfloader\network.h" />
-    <ClInclude Include="..\HomebrewDump2\elfloader\server.h" />
-    <ClInclude Include="..\HomebrewDump2\elfloader\syscalls.h" />
-    <ClInclude Include="..\HomebrewDump2\elfloader\util.h" />
-    <ClInclude Include="..\HomebrewDump\libweb\webvita.h" />
     <ClInclude Include="..\mira-project-master\Firmware\Dependencies\oni-framework\include\oni\utils\dynlib.h" />
     <ClInclude Include="..\mira-project-master\Firmware\Dependencies\oni-framework\include\oni\utils\kdlsym.h" />
     <ClInclude Include="Modded_SDK\libPS4\include\kernel.h" />

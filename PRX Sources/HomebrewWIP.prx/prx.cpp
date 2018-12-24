@@ -125,7 +125,6 @@ PRX_EXPORT int pkgdlmode(void)
 
 }
 
-
 PRX_EXPORT int Spoofonel(void)
 {
 	struct thread td;

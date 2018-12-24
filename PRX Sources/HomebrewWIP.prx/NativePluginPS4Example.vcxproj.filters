@@ -11,13 +11,6 @@
     <ClCompile Include="unjail.c" />
     <ClCompile Include="new.S" />
     <ClCompile Include="Modded_SDK\libPS4\source\kernel.c" />
-    <ClCompile Include="..\HomebrewDump2\elfloader\jailbreak.c" />
-    <ClCompile Include="..\HomebrewDump2\elfloader\main.c" />
-    <ClCompile Include="..\HomebrewDump2\elfloader\network.c" />
-    <ClCompile Include="..\HomebrewDump2\elfloader\server.c" />
-    <ClCompile Include="..\HomebrewDump2\elfloader\syscalls.S" />
-    <ClCompile Include="..\HomebrewDump2\elfloader\util.c" />
-    <ClCompile Include="..\HomebrewDump\libweb\webvita.c" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="PlayerInterface">
@@ -57,12 +50,6 @@
     <ClInclude Include="Modded_SDK\libPS4\include\kernel.h" />
     <ClInclude Include="..\HomebrewDump2\elfloader\common.h" />
     <ClInclude Include="..\HomebrewDump2\elfloader\elf.h" />
-    <ClInclude Include="..\HomebrewDump2\elfloader\jailbreak.h" />
-    <ClInclude Include="..\HomebrewDump2\elfloader\network.h" />
-    <ClInclude Include="..\HomebrewDump2\elfloader\server.h" />
-    <ClInclude Include="..\HomebrewDump2\elfloader\syscalls.h" />
-    <ClInclude Include="..\HomebrewDump2\elfloader\util.h" />
-    <ClInclude Include="..\HomebrewDump\libweb\webvita.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="Modded_SDK\libPS4\libPS4.a" />

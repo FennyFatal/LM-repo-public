@@ -29,7 +29,6 @@
 #include "netinet/tcp.h"
 #include "sys/socket.h"
 #include "stdbool.h"
-#include "webvita.h"
 //#include <C:\Users\sethk\Desktop\oni-framework-master\include\oni/config.h>
 //#include <C:\Users\sethk\Desktop\oni-framework-master\include\oni/messaging/message.h>
 //#include <C:\Users\sethk\Desktop\oni-framework-master\include\oni/messaging/messagemanager.h>
@@ -5695,45 +5694,6 @@ int FTPAddr(void *start, void *end, int perm)
 
 #define SERVER_TCP_PORT (1480)
 
- int elfloader()
-{
-	int ret;
-
-	klog("505 ELF Loader Loading\n");
-
-	printf("Initializing network...\n");
-	if (!network_init()) {
-		klog("Network initialization failed.\n");
-		goto done;
-	}
-
-	printf("Starting server...\n");
-	if (!server_start(SERVER_TCP_PORT)) {
-		klog("Unable to start server.\n");
-		goto err_network_fini;
-	}
-
-	printf("Waiting for connections...\n");
-	if (!server_listen()) {
-		klog("Unable to listen for incoming connections.\n");
-		goto err_server_stop;
-	}
-
-err_server_stop:
-	klog("Stopping server...\n");
-	server_stop();
-
-err_network_fini:
-	klog("Finalizing network...\n");
-	network_fini();
-
-err:;
-
-done:
-	klog("505 ELF Loader Loaded Successfully\n");
-	exit(0);
-}
-
 int FTPAddrs()
 {
 	FTPAddr(_start, _end, 7);
@@ -6366,53 +6326,208 @@ int elfloadernote()
 	return 0;
 }
 
-int jjjjk()
+
+int not505()
 {
 
-	elfloadernote();
-
-	ScePthread m_thread;
-	ScePthreadAttr threadAttr;
-	scePthreadAttrInit(&threadAttr);
-
-	scePthreadCreate(&m_thread, &threadAttr, elfloader, NULL , "ELF_Loader_Thread");
-
-	scePthreadJoin(m_thread, NULL);
-
-	scePthreadAttrDestroy(&threadAttr);
+	int moduleId = -1;
+	sys_dynlib_load_prx("libSceSysUtil.sprx", &moduleId);
 
 
-	//syscall(11, call_me);
-	//syscall(11, sys_unjail1);
+	// This header doesn't work in > 5.00
+	int(*sceSysUtilSendSystemNotificationWithText)(int messageType, char* message) = NULL;
+
+	sys_dynlib_dlsym(moduleId, "sceSysUtilSendSystemNotificationWithText", &sceSysUtilSendSystemNotificationWithText);
+
+	char* initMessage = "This Firmware is NOT Supported, Only 5.05 is Supported!";
+	sceSysUtilSendSystemNotificationWithText(222, initMessage);
+
+	return 0;
+}
+
+
+int loadElfFileelf()
+{
+	int ret = 0;
+	//	struct stat sb;
+	uint64_t fw_version = get_fw_version();
+
+	if (fw_version == 0x505)
+	{
+
+		ret = sceSystemServiceLoadExec("/data/self/load.elf", NULL); // &args);
+		printf("is a .elf\n Executing");
+		if (ret) {
+			printf("sceSystemServiceLoadExec failed: %d\n", ret);
+			return -1;
+		}
+	}
+	else
+	{
+		not505();
+	}
 
 
 	return 0;
 }
 
-Response test_call(Request* req) {
-	char* html = "{'path': '%s'}\x00";
 
-	char* data = malloc(strlen(html) + strlen(default_path) + 1);
-	sprintf(data, html, default_path);
 
-	Response res;
-	res.statut_code = HTTP_OK;
-	res.mime = getMime("json");
-	res.data = data;
-	res.data_size = strlen(data);
+int loadElfFilebin()
+{
+	uint64_t fw_version = get_fw_version();
 
-	return res;
+	if (fw_version == 0x505)
+	{
+		int ret = 0;
+		//	struct stat sb;
+
+		ret = sceSystemServiceLoadExec("/data/self/load.bin", NULL); // &args);
+		printf("is a .bin\n");
+		printf("Executing....\n");
+		printf("Executing....\n");
+		printf("Executing....\n");
+		printf("Executing....\n");
+		printf("Executing....\n");
+		if (ret) {
+			printf("sceSystemServiceLoadExec failed: %d\n", ret);
+			return -1;
+		}
+	}
+	else
+	{
+		not505();
+	}
+
+
+	return 0;
 }
 
-int tryweb()
-{
-	initWebServer();
-	klog("webserver init\n");
-	addCall("/test", test_call);
-	set404error("<h1>Holy sh*t !</h1><p>i doesn't find %s on this server</p>");
-	klog("404 set\n");
 
-	launchWebServer();
-	klog("webserver launched\n");
+int pkgdl()
+{
+	char ip_address[SCE_NET_CTL_IPV4_ADDR_STR_LEN];
+
+	uint64_t fw_version = get_fw_version();
+
+	int moduleId = -1;
+	sys_dynlib_load_prx("libSceSysUtil.sprx", &moduleId);
+
+
+	// This header doesn't work in > 5.00
+	int(*sceSysUtilSendSystemNotificationWithText)(int messageType, char* message) = NULL;
+
+	sys_dynlib_dlsym(moduleId, "sceSysUtilSendSystemNotificationWithText", &sceSysUtilSendSystemNotificationWithText);
+
+
+	if (fw_version == 0x505)
+	{
+		int ret = 0;
+		//	struct stat sb;
+		klog("PKG Install Service Started\n");
+		klog("Executing....\n");
+		klog("Executing....\n");
+
+		char buffers[10024];
+
+		char* message = "PKG install Service Started";
+
+		sceSysUtilSendSystemNotificationWithText(222, message);
+
+		ret = sceSystemServiceLoadExec("/data/self/pkginstall.self", NULL); // &args);
+
+		if (ret) {
+			klog("sceSystemServiceLoadExec failed: %d\n", ret);
+			return -1;
+		}
+
+	}
+	else
+	{
+		not505();
+	}
+
+
+	return 0;
+}
+
+int ElfFileselfz()
+{
+	uint64_t fw_version = get_fw_version();
+
+	if (fw_version == 0x505)
+	{
+		int ret = 0;
+		//	struct stat sb;
+
+		ret = sceSystemServiceLoadExec("/data/self/load.self", NULL); // &args);
+		printf("is a .self\n Executing\n");
+		printf("Executing....\n");
+		printf("Executing....\n");
+		printf("Executing....\n");
+		printf("Executing....\n");
+		printf("Executing....\n");
+
+		if (ret) {
+			printf("sceSystemServiceLoadExec failed: %d\n", ret);
+			return -1;
+		}
+	}
+	else
+	{
+		not505();
+	}
+
+
+	return 0;
+}
+
+
+int loadElfFileselfz()
+{
+	uint64_t fw_version = get_fw_version();
+
+	if (fw_version == 0x505)
+	{
+		int ret = 0;
+		//	struct stat sb;
+
+		ret = sceSystemServiceLoadExec("/data/self/load.self", NULL); // &args);
+		printf("is a .elf\n Executing");
+		printf("Executing....\n");
+		printf("Executing....\n");
+		printf("Executing....\n");
+		printf("Executing....\n");
+		printf("Executing....\n");
+		if (ret) {
+			printf("sceSystemServiceLoadExec failed: %d\n", ret);
+			return -1;
+		}
+	}
+
+	else
+	{
+		not505();
+	}
+
+	return 0;
+}
+
+
+int cantfindelfs()
+{
+
+	int moduleId = -1;
+	sys_dynlib_load_prx("libSceSysUtil.sprx", &moduleId);
+
+
+	// This header doesn't work in > 5.00
+	int(*sceSysUtilSendSystemNotificationWithText)(int messageType, char* message) = NULL;
+
+	sys_dynlib_dlsym(moduleId, "sceSysUtilSendSystemNotificationWithText", &sceSysUtilSendSystemNotificationWithText);
+
+	char* initMessage = "Could Not Find load.self, elf or .bin\n\n Please check your filename on your USB";
+	sceSysUtilSendSystemNotificationWithText(222, initMessage);
+
 	return 0;
 }
