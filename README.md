@@ -4,6 +4,8 @@
 
 ### Source Code is Closed to Devs ONLY
 
+### Change the Solution and project paths!
+
 
 
 ![alt text](https://github.com/LightningMods/PS4-FS-Manager/blob/master/FS.png)
