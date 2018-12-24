@@ -54,7 +54,7 @@ int dumppsid() {
 
 	FILE *outfiles;
 
-	// open file for writing 
+	// opens file for writing 
 	outfiles = fopen("/mnt/usb0/PSID.txt", "w");
 
 	fprintf(outfiles, "PSID: %s\n\n", psid_buf);

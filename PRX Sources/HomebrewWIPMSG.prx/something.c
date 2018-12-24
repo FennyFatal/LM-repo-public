@@ -27,7 +27,7 @@ int64_t sys_dynlib_load_prx(char* prxPath, int* moduleID)
 	return (int64_t)syscall4(594, prxPath, 0, moduleID, 0);
 }
 
-int open(const char *path, int flags, int mode)
+int opens(const char *path, int flags, int mode)
 {
 	return syscall(5, path, flags, mode);
 }
@@ -234,7 +234,7 @@ void do_dump(char *saveFile, int fd, SegmentBufInfo *segBufs, int segBufNum, Elf
 }
 
 void decrypt_and_dump_self(char *selfFile, char *saveFile) {
-	int fd = open(selfFile, O_RDONLY, 0);
+	int fd = opens(selfFile, O_RDONLY, 0);
 	if (fd != -1) {
 		void *addr = mmap(0, 0x4000, PROT_READ | PROT_WRITE, MAP_PRIVATE, fd, 0);
 		if (addr != MAP_FAILED) {
