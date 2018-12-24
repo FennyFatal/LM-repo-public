@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomebrewDump", "NativePluginPS4Example.vcxproj", "{C0867F77-F7CE-4EC5-9923-8DB2348D4C3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3F736880-BF71-4771-AD06-AA6A4AC3DF91}"
+	ProjectSection(SolutionItems) = preProject
+		..\ps4-payload-sdk-master\libPS4\include\ps4.h = ..\ps4-payload-sdk-master\libPS4\include\ps4.h
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ORBIS = Debug|ORBIS
+		Release|ORBIS = Release|ORBIS
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0867F77-F7CE-4EC5-9923-8DB2348D4C3A}.Debug|ORBIS.ActiveCfg = Release|ORBIS
+		{C0867F77-F7CE-4EC5-9923-8DB2348D4C3A}.Debug|ORBIS.Build.0 = Release|ORBIS
+		{C0867F77-F7CE-4EC5-9923-8DB2348D4C3A}.Release|ORBIS.ActiveCfg = Release|ORBIS
+		{C0867F77-F7CE-4EC5-9923-8DB2348D4C3A}.Release|ORBIS.Build.0 = Release|ORBIS
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08CF7A7D-0D89-4CBB-BA94-467CFF51A4EA}
+	EndGlobalSection
+EndGlobal

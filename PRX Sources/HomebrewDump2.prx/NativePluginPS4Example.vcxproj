@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ORBIS">
+      <Configuration>Debug</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ORBIS">
+      <Configuration>Release</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C0867F77-F7CE-4EC5-9923-8DB2348D4C3A}</ProjectGuid>
+    <ProjectName>HomebrewDump</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(DebuggerFlavor)'=='ORBISDebugger'" Label="OverrideDebuggerDefaults">
+    <!--LocalDebuggerCommand>$(TargetPath)</LocalDebuggerCommand-->
+    <!--LocalDebuggerCommandArguments></LocalDebuggerCommandArguments-->
+    <!--LocalDebuggerTarget></LocalDebuggerTarget-->
+    <!--LocalDebuggerWorkingDirectory>$(ProjectDir)</LocalDebuggerWorkingDirectory-->
+    <!--LocalRunCommandLine></LocalRunCommandLine-->
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <OutDir>C:\Users\sethk\Desktop\HomebrewDump</OutDir>
+    <IncludePath>C:\Users\sethk\Desktop\ps4-payload-sdk-master\libPS4\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <OutDir>.</OutDir>
+    <IncludePath />
+    <TargetName>HomebrewDump</TargetName>
+    <TargetExt>.prx</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>C:\Users\sethk\Desktop\HomebrewDump\libweb;C:\Users\sethk\Desktop\HomebrewDump\ps4debug;C:\Users\sethk\Desktop\HomebrewDump\include;C:\Users\sethk\Desktop\HomebrewDump\ps4-ksdk;C:\Users\sethk\Desktop\HomebrewDump\ps4-kexec-master;C:\Users\sethk\Desktop\HomebrewDump\jkpatch455;C:\Users\sethk\Desktop\HomebrewDump\linux;C:\Users\sethk\Desktop\HomebrewDump\kdumper;C:\Users\sethk\Desktop\HomebrewDump\jkpatch505;C:\Users\sethk\Desktop\HomebrewDump\HENPatch;C:\Users\sethk\Desktop\HomebrewDump\elfloader;C:\Users\sethk\Desktop\HomebrewDump\include\pupz;C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include;C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include_common;C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\include\sys\_types;C:\Users\sethk\Desktop\HomebrewDump\Modded_SDK\libPS4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\SCE\ORBIS SDKs\4.500\target\lib;C:\Users\sethk\Desktop\loader\Modded_SDK\libPS4;C:\Users\sethk\Desktop\loader\Modded_SDK\libusbfatfs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>-lkernel_stub_weak;-lc_lto;-lSceSystemService_stub;-lc_stub_weak;-lSceCommonDialog_stub_weak;-lSceSampleUtil;-lSceMsgDialog_stub_weak;-lSceInvitationDialog_stub_weak;-lSceNet_stub_weak;-lSceNetCtl_stub_weak;-lSceHttp_stub_weak;-lSceSsl_stub_weak;-lSceMd5;-lSceNpCommon_stub_weak;-lSceNpManager_stub_weak;-lSceNpProfileDialog_stub_weak;-lSceNpFriendlistDialog_stub_weak;-lSceImeDialog_stub_weak;-lSceNpWebApi_stub_weak;-lSceJson2_stub_weak;-lSceSaveData_stub_weak;-lSceSaveDataDialog_stub_weak;-lSceWebBrowserDialog_stub_weak;-lSceSystemService_stub_weak;-lSceGameCustomDataDialog_stub_weak;-lSceVrServiceDialog_stub_weak;-lSceSysmodule_stub_weak;-lSceFios2_stub_weak;-lSceGnm_lto;-lSceGnm;-lSceAjm_stub_weak;-lPS4;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <OptimizationLevel>Level2</OptimizationLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>C:\Users\sethk\Desktop\orbisdev505\include;C:\Users\sethk\Desktop\HomebrewDump\ps4-ksdk;C:\Users\sethk\Desktop\HomebrewDump\ps4debug;C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\samples\sample_code\system\tutorial_shooting_game_trc_compliant\common;C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\samples\sample_code\system\api_common_dialog\showcase\webbrowser_dialog\;C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\samples\sample_code\system\api_common_dialog\showcase\message_dialog\;C:\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\samples\sample_code\system\api_common_dialog\showcase;C:\Users\sethk\Desktop\HomebrewDump\ps4-kexec-master;C:\Users\sethk\Desktop\HomebrewDump\jkpatch455;C:\Users\sethk\Desktop\HomebrewDump\include;C:\Users\sethk\Desktop\HomebrewDump\include\pupz;C:\Users\sethk\Desktop\HomebrewDump\gamedumper\include;C:\Users\sethk\Desktop\HomebrewDump;C:\Users\sethk\Desktop\HomebrewDump\linux\source;C:\Users\sethk\Desktop\HomebrewDump\Modded_SDK\libPS4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\SCE\ORBIS SDKs\4.500\target\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>-lkernel_stub_weak;-lc_lto;-lSceSystemService_stub;-lc_stub_weak;-lSceCommonDialog_stub_weak;-lSceMsgDialog_stub_weak;-lSceInvitationDialog_stub_weak;-lSceNet_stub_weak;-lSceNetCtl_stub_weak;-lSceHttp_stub_weak;-lSceSsl_stub_weak;-lSceMd5;-lSceNpCommon_stub_weak;-lSceNpManager_stub_weak;-lSceNpProfileDialog_stub_weak;-lSceNpFriendlistDialog_stub_weak;-lSceImeDialog_stub_weak;-lSceNpWebApi_stub_weak;-lSceJson2_stub_weak;-lSceSaveData_stub_weak;-lSceSaveDataDialog_stub_weak;-lSceWebBrowserDialog_stub_weak;-lSceSystemService_stub_weak;-lSceGameCustomDataDialog_stub_weak;-lSceVrServiceDialog_stub_weak;-lSceSysmodule_stub_weak;-lSceFios2_stub_weak;-lSceGnm_lto;-lSceGnm;-lSceAjm_stub_weak</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="455linux.S" />
+    <ClCompile Include="elfloader\jailbreak.c" />
+    <ClCompile Include="elfloader\network.c" />
+    <ClCompile Include="elfloader\server.c" />
+    <ClCompile Include="elfloader\util.c" />
+    <ClCompile Include="embedHENPatches.s" />
+    <ClCompile Include="embedjk.S" />
+    <ClCompile Include="embedjk455.S" />
+    <ClCompile Include="gamedumper\source\dump.c" />
+    <ClCompile Include="libweb\webvita.c" />
+    <ClCompile Include="linux\source\embed.s" />
+    <ClCompile Include="Modded_SDK\libPS4\source\kernel.c" />
+    <ClCompile Include="new.S" />
+    <ClCompile Include="PlayerInterface\UnityPrxPlugin.cpp" />
+    <ClCompile Include="pluginLib.cpp" />
+    <ClCompile Include="pluginunjail.cpp" />
+    <ClCompile Include="prx.cpp" />
+    <ClCompile Include="ps4debug\embeddebug.s" />
+    <ClCompile Include="psxdev.c" />
+    <ClCompile Include="remoteplay.S" />
+    <ClCompile Include="syscall-9.s" />
+    <ClCompile Include="syscall.cpp" />
+    <ClCompile Include="syscall9455.s" />
+    <ClCompile Include="sys_unjail.S" />
+    <ClCompile Include="unjail.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">CompileAsC</CompileAs>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\mira-project-master\Firmware\Dependencies\oni-framework\include\oni\utils\dynlib.h" />
+    <ClInclude Include="..\mira-project-master\Firmware\Dependencies\oni-framework\include\oni\utils\kdlsym.h" />
+    <ClInclude Include="elfloader\common.h" />
+    <ClInclude Include="elfloader\elf.h" />
+    <ClInclude Include="elfloader\jailbreak.h" />
+    <ClInclude Include="elfloader\network.h" />
+    <ClInclude Include="elfloader\util.h" />
+    <ClInclude Include="gamedumper\include\defines.h" />
+    <ClInclude Include="gamedumper\include\dump.h" />
+    <ClInclude Include="include\AMD.h" />
+    <ClInclude Include="include\assert.h" />
+    <ClInclude Include="include\elf.h" />
+    <ClInclude Include="include\freebsd.h" />
+    <ClInclude Include="include\install.h" />
+    <ClInclude Include="include\jkpatch.h" />
+    <ClInclude Include="include\magic.h" />
+    <ClInclude Include="include\resolve.h" />
+    <ClInclude Include="include\sparse.h" />
+    <ClInclude Include="include\utilities.h" />
+    <ClInclude Include="libweb\webvita.h" />
+    <ClInclude Include="linux\source\definez.h" />
+    <ClInclude Include="Modded_SDK\libPS4\include\kernel.h" />
+    <ClInclude Include="PlayerInterface\IPluginPS3.h" />
+    <ClInclude Include="PlayerInterface\IPluginPSP2.h" />
+    <ClInclude Include="PlayerInterface\IPluginSceAppParams.h" />
+    <ClInclude Include="PlayerInterface\IPluginSceNpParams.h" />
+    <ClInclude Include="PlayerInterface\IPluginUnity.h" />
+    <ClInclude Include="PlayerInterface\PrxPluginInterface.h" />
+    <ClInclude Include="PlayerInterface\UnityEventQueue.h" />
+    <ClInclude Include="PlayerInterface\UnityPrxPlugin.h" />
+    <ClInclude Include="pluginunjail.h" />
+    <ClInclude Include="syscall.h" />
+    <ClInclude Include="unjail.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Modded_SDK\libPS4\libPS4.a" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="kern.id" />
+  </ItemGroup>
+  <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
