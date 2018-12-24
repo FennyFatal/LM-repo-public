@@ -14,27 +14,27 @@
 
 ### Linked PRX Imports
 
-HomebrewWIP.prx
-HomebrewDump2.prx
-HomebrewWIPMSG.prx
+1. HomebrewWIP.prx
+2. HomebrewDump2.prx
+3. HomebrewWIPMSG.prx
 
 
 
 
 ### Features
-Copy
-Cut
-Paste
-New File
-New Folder
-Rename
-Delete
+1. Copy
+2. Cut
+3. Paste
+4. New File
+5. New Folder
+6. Rename
+7. Delete
 
 ### Settings Menu
-Unsafe Partition R/W
-FTP
-Hide Local IP
-SELF Decryption
+1. Unsafe Partition R/W
+2. FTP
+3. Hide Local IP
+3. SELF Decryption
 
 ### Features
 
@@ -45,10 +45,10 @@ SELF Decryption
 
 ### Requirements
 
-Sony 4.50 SDK
-Unity 2017.2.0p2
-VS 2015
-FSELF Tools
+- Sony 4.50 SDK
+- Unity 2017.2.0p2
+- VS 2015
+- FSELF Tools
 
 Credits to
 
