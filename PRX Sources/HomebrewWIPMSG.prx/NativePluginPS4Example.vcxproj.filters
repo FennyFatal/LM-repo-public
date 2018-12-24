@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="prx.cpp" />
+    <ClCompile Include="PlayerInterface\UnityPrxPlugin.cpp">
+      <Filter>PlayerInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Desktop\HomebrewDump\new.S" />
+    <ClCompile Include="something.c" />
+    <ClCompile Include="..\..\Desktop\HomebrewDump\tttt.S" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="PlayerInterface">
+      <UniqueIdentifier>{1ef13144-7666-4633-b4e8-94c85a8a09b0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PlayerInterface\UnityPrxPlugin.h">
+      <Filter>PlayerInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInterface\IPluginPS3.h">
+      <Filter>PlayerInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInterface\IPluginPSP2.h">
+      <Filter>PlayerInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInterface\IPluginSceAppParams.h">
+      <Filter>PlayerInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInterface\IPluginSceNpParams.h">
+      <Filter>PlayerInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInterface\IPluginUnity.h">
+      <Filter>PlayerInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInterface\PrxPluginInterface.h">
+      <Filter>PlayerInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerInterface\UnityEventQueue.h">
+      <Filter>PlayerInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="h.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\Desktop\orbisdev505\lib\libdebugnet.a" />
+    <Library Include="..\..\Desktop\orbisdev505\lib\libelfloader.a" />
+    <Library Include="..\..\Desktop\orbisdev505\lib\libmod.a" />
+    <Library Include="..\..\Desktop\orbisdev505\lib\liborbis2d.a" />
+    <Library Include="..\..\Desktop\orbisdev505\lib\liborbisAudio.a" />
+    <Library Include="..\..\Desktop\orbisdev505\lib\liborbisFileBrowser.a" />
+    <Library Include="..\..\Desktop\orbisdev505\lib\liborbisKeyboard.a" />
+    <Library Include="..\..\Desktop\orbisdev505\lib\liborbisPad.a" />
+    <Library Include="..\..\Desktop\orbisdev505\lib\liborbisSys.a" />
+    <Library Include="..\..\Desktop\orbisdev505\lib\liborbisXbmFont.a" />
+    <Library Include="..\..\Desktop\orbisdev505\lib\libplini.a" />
+    <Library Include="..\..\Desktop\orbisdev505\lib\libpng.a" />
+    <Library Include="..\..\Desktop\orbisdev505\lib\libps4link.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libc_lto.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libc_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libclang_rt.profile-x86_64.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libEdgeAnim.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libEdgeAnim_debug.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libEdgeAnimTool.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libkernel_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceAjm_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceAppContent_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceAt9Enc_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceAudio3d_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceAudiodec_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceAudiodecCpu_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceAudiodecCpuHevag_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceAudioIn_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceAudioLatencyEstimation_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceAudioOut_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceAvPlayer_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceCamera_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceCes.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceCommonDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceCompanionHttpd_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceCompanionUtil_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceContentDelete_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceContentExport_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceContentSearch_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceConvertKeycode_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceCoredump_debug_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceCoredump_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceCoredumpStructuredData.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceDbg_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceDbgAddressSanitizer_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceDbgAudioOut_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceDbgEnC.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceDbgKeyboard_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceDbgPlayGo_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceDbgUBSanitizer_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceDbgVideoOut_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceDeci4h_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceDepth_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceEditMp4_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceErrorDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceFace_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceFaceTracker_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceFiber_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceFios2_debug_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceFios2_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceFont_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceFontFt_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceGameCustomDataDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceGameLiveStreaming_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceGnf.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceGnf_debug.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceGnm.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceGnm_debug.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceGnm_lto.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceGnmDriver_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceGnmx.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceGnmx_debug.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceGnmx_lto.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceGpuAddress.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceGpuDebugger_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceHand_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceHandTracker_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceHeadTracker_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceHmac.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceHmd_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceHmdSetupDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceHttp_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceIme_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceImeBackend_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceImeDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceInvitationDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceJobManager_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceJobManagerTest.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceJpegDec_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceJpegEnc_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceJson2_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceLoginDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceLoginService_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceM4aacEnc_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceMat_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceMd5.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceMouse_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceMove_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceMoveTracker_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceMsgDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceMt19937.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNet_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNetCtl_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNetCtlAp_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNetCtlApDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNetDebug_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNgs2_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpAuth_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpCommerce_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpCommon_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpFriendListDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpManager_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpMatching2_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpParty_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpProfileDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpScore_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpSignaling_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpSns_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpSnsFacebookDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpToolkit2_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpTrophy_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpTus_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpUtility_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceNpWebApi_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libScePad_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libScePadTracker_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libScePerf_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libScePhysicsEffects.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libScePlayGo_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libScePlayGoDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libScePm4Dump.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libScePngDec_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libScePngEnc_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libScePosix_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceRandom_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceRazorCpu_debug_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceRazorCpu_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceRazorGpuThreadTrace_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceRemoteplay_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceRtc_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceRudp_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceS3DConversion_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSampleUtil.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSaveData_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSaveDataDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceScream.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceScreamserver.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceScreenShot_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSecure.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSecure_stub.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSecure_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSfmt607.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSfmt1279.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSfmt2281.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSfmt4253.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSfmt11213.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSfmt19937.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSfmt44497.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSfmt86243.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSfmt132049.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSfmt216091.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSha0.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSha1.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSha224.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSha256.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSha384.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSha512.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSha512t.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceShaderBinary.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSharePlay_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceShareUtility_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSigninDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSmart_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSndstream.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSocialScreen_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSocialScreenDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSpeechRecognition.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSsl_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSubdiv.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSulpha_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSysmodule_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSystemGesture_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSystemService_stub.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceSystemService_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceTextureTool.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceUlt_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceUsbd_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceUserService_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceVideodec_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceVideodec2_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceVideoOut_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceVideoRecording_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceVoice_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceVoiceQoS_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceVrServiceDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceVrTrace.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceVrTracker_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceWebBrowserDialog_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceXml_stub_weak.a" />
+    <Library Include="..\..\..\..\Program Files (x86)\SCE\ORBIS SDKs\4.500\target\lib\libSceZlib_stub_weak.a" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Desktop\orbisdev505\lib\liborbis2d.a.old" />
+  </ItemGroup>
+</Project>

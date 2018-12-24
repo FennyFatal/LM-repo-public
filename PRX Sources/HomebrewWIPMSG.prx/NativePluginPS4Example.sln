@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NativePluginPS4Example", "NativePluginPS4Example.vcxproj", "{C0867F77-F7CE-4EC5-9923-8DB2348D4C3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{62855764-FF24-4159-919C-0537AFCD0D72}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Desktop\HomebrewDump\new.S = ..\..\Desktop\HomebrewDump\new.S
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ORBIS = Debug|ORBIS
+		Release|ORBIS = Release|ORBIS
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0867F77-F7CE-4EC5-9923-8DB2348D4C3A}.Debug|ORBIS.ActiveCfg = Debug|ORBIS
+		{C0867F77-F7CE-4EC5-9923-8DB2348D4C3A}.Debug|ORBIS.Build.0 = Debug|ORBIS
+		{C0867F77-F7CE-4EC5-9923-8DB2348D4C3A}.Release|ORBIS.ActiveCfg = Release|ORBIS
+		{C0867F77-F7CE-4EC5-9923-8DB2348D4C3A}.Release|ORBIS.Build.0 = Release|ORBIS
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F51A21AD-69D9-4F30-A9F9-86D509F2213E}
+	EndGlobalSection
+EndGlobal
