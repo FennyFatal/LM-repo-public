@@ -145,35 +145,6 @@ int kexecsx(void* func, void *user_arg) {
 #define ASSERT_STRSIZE(struc, size) \
     _Static_assert(sizeof( struc ) == (size), "size of " #struc " != " #size )
 
-typedef struct {
-	Elf64_Word  sh_name;
-	Elf64_Word  sh_type;
-	Elf64_Xword sh_flags;
-	Elf64_Addr  sh_addr;
-	Elf64_Off   sh_offset;
-	Elf64_Xword sh_size;
-	Elf64_Word  sh_link;
-	Elf64_Word  sh_info;
-	Elf64_Xword sh_addralign;
-	Elf64_Xword sh_entsize;
-} Elf64_Shdr;
-
-typedef struct {
-	unsigned char	e_ident[EI_NIDENT];	
-	Elf64_Half	e_type;		
-	Elf64_Half	e_machine;	
-	Elf64_Word	e_version;	
-	Elf64_Addr	e_entry;	
-	Elf64_Off	e_phoff;	
-	Elf64_Off	e_shoff;	
-	Elf64_Word	e_flags;	
-	Elf64_Half	e_ehsize;	
-	Elf64_Half	e_phentsize;	
-	Elf64_Half	e_phnum;	
-	Elf64_Half	e_shentsize;	
-	Elf64_Half	e_shnum;	
-	Elf64_Half	e_shstrndx;	
-} Elf64_Ehdr;
 
 int sceUserMainThreadPriority = 700;
 
@@ -805,7 +776,7 @@ void decrypt_and_dump_self(char *selfFile, char *saveFile) {
 
 	////////////printfsocket("applying patches\n");
 
-	int fd = open(selfFile, O_RDONLY, 0);
+	int fd = opens(selfFile, O_RDONLY, 0);
 	if (fd != -1) {
 		void *addr = mmap(0, 0x4000, PROT_READ, MAP_PRIVATE, fd, 0);
 		if (addr != MAP_FAILED) {
@@ -831,7 +802,7 @@ void decrypt_and_dump_self(char *selfFile, char *saveFile) {
 		}
 	}
 	else {
-		////////////printfsocket("open %s err : %s\n", selfFile, strerror(errno));
+		////////////printfsocket("opens %s err : %s\n", selfFile, strerror(errno));
 	}
 	// set it back to normal
 
@@ -938,7 +909,7 @@ SegmentBufInfo *parse_phdr( Elf64_Phdr *phdrs, int num, int *segBufNum) {
 }
 
 void do_dump(char *saveFile, int fd, SegmentBufInfo *segBufs, int segBufNum, Elf64_Ehdr *ehdr) {
-	int sf = open(saveFile, O_WRONLY | O_CREAT | O_TRUNC, 0777);
+	int sf = opens(saveFile, O_WRONLY | O_CREAT | O_TRUNC, 0777);
 	if (sf != -1) {
 		size_t elfsz = 0x40 + ehdr->e_phnum * sizeof( Elf64_Phdr);
 		////printfsocket("elf header + phdr size : 0x%08X\n", elfsz);
@@ -967,12 +938,12 @@ void do_dump(char *saveFile, int fd, SegmentBufInfo *segBufs, int segBufNum, Elf
 		close(sf);
 	}
 	else {
-		////printfsocket("open %s err : %s\n", saveFile, strerror(errno));
+		////printfsocket("opens %s err : %s\n", saveFile, strerror(errno));
 	}
 }
 
 void decrypt_and_dump_self(char *selfFile, char *saveFile) {
-	int fd = open(selfFile, O_RDONLY, 0);
+	int fd = opens(selfFile, O_RDONLY, 0);
 	if (fd != -1) {
 		void *addr = mmap(0, 0x4000, PROT_READ | PROT_WRITE, MAP_PRIVATE, fd, 0);
 		if (addr != MAP_FAILED) {
@@ -1003,12 +974,12 @@ void decrypt_and_dump_self(char *selfFile, char *saveFile) {
 	
 	}
 	else {
-		////printfsocket("open %s err : %s\n", selfFile, strerror(errno));
+		////printfsocket("opens %s err : %s\n", selfFile, strerror(errno));
 	}
 }
 
 void decrypt_and_dump_selfs(char selfFile, char saveFile) {
-	int fd = open(selfFile, O_RDONLY, 0);
+	int fd = opens(selfFile, O_RDONLY, 0);
 	if (fd != -1) {
 		void *addr = mmap(0, 0x4000, PROT_READ | PROT_WRITE, MAP_PRIVATE, fd, 0);
 		if (addr != MAP_FAILED) {
@@ -1039,7 +1010,7 @@ void decrypt_and_dump_selfs(char selfFile, char saveFile) {
 
 	}
 	else {
-		////printfsocket("open %s err : %s\n", selfFile, strerror(errno));
+		////printfsocket("opens %s err : %s\n", selfFile, strerror(errno));
 	}
 }
 
@@ -1074,7 +1045,7 @@ int unlink(const char *pathname)
 	return syscall(10, pathname);
 }
 
-int open(const char *path, int flags, int mode)
+int opens(const char *path, int flags, int mode)
 {
 	return syscall(5, path, flags, mode);
 }
@@ -1431,9 +1402,9 @@ void klog(const char *format, ...)	// didn't notice before, the addrs aren't ali
 
 
 
-	int fd = open("/dev/klog", O_WRONLY, 0600);             // O_DIRECT | Open the device with read/write access
+	int fd = opens("/dev/klog", O_WRONLY, 0600);             // O_DIRECT | opens the device with read/write access
 	if (fd < 0) {
-		perror("Failed to open the device...");		// idk if we have perror, doesn't matter we'll find out 
+		perror("Failed to opens the device...");		// idk if we have perror, doesn't matter we'll find out 
 		return ;
 	}
 
@@ -1442,9 +1413,9 @@ void klog(const char *format, ...)	// didn't notice before, the addrs aren't ali
 	close(fd);
 
 ///* WTF/>
-	fd = open("/dev/ttyu0", O_WRONLY, 0600);             // O_DIRECT | Open the device with read/write access
+	fd = opens("/dev/ttyu0", O_WRONLY, 0600);             // O_DIRECT | opens the device with read/write access
 	if (fd < 0) {
-		perror("Failed to open the device...");		// idk if we have perror, doesn't matter we'll find out 
+		perror("Failed to opens the device...");		// idk if we have perror, doesn't matter we'll find out 
 		return;
 	}
 
@@ -2232,7 +2203,7 @@ static void send_LIST(ftps4_client_info_t *client, const char *path)
 	dentbufsize = st.st_blksize;
 	//DEBUG("dent buffer size = %lx\n", dentbufsize);
 
-	dfd = open(path, O_RDONLY, 0);
+	dfd = opens(path, O_RDONLY, 0);
 	if (dfd < 0) {
 		client_send_ctrl_msg(client, "550 Invalid directory." FTPS4_EOL);
 		return;
@@ -2375,7 +2346,7 @@ static void cmd_CWD_func(ftps4_client_info_t *client)
 			/* If the path is not "/", check if it exists */
 			if (strcmp(tmp_path, "/") != 0) {
 				/* Check if the path exists */
-				pd = open(tmp_path, O_RDONLY, 0);
+				pd = opens(tmp_path, O_RDONLY, 0);
 				if (pd < 0) {
 					client_send_ctrl_msg(client, "550 Invalid directory." FTPS4_EOL);
 					return;
@@ -2428,7 +2399,7 @@ static void send_file(ftps4_client_info_t *client, const char *path)
 
 	//DEBUG("Opening: %s\n", path);
 
-	if ((fd = open(path, O_RDONLY, 0)) >= 0) {
+	if ((fd = opens(path, O_RDONLY, 0)) >= 0) {
 
 		lseek(fd, client->restore_point, SEEK_SET);
 
@@ -2517,7 +2488,7 @@ static void receive_file(ftps4_client_info_t *client, const char *path)
 		mode = mode | O_TRUNC;
 	}
 
-	if ((fd = open(path, mode, 0777)) >= 0) {
+	if ((fd = opens(path, mode, 0777)) >= 0) {
 
 		buffer = malloc(file_buf_size);
 		if (buffer == NULL) {
@@ -2772,7 +2743,7 @@ static void client_list_thread_end()
 		sceNetSocketAbort(it->ctrl_sockfd,
 			SCE_NET_SOCKET_ABORT_FLAG_RCV_PRESERVATION);
 
-		/* If there's an open data connection, abort it */
+		/* If there's an opens data connection, abort it */
 		if (it->data_con_type != FTP_DATA_CONNECTION_NONE) {
 			sceNetSocketAbort(it->data_sockfd, data_abort_flags);
 			if (it->data_con_type == FTP_DATA_CONNECTION_PASSIVE) {
@@ -2848,7 +2819,7 @@ static void *client_thread(void *arg)
 	/* Close the client's socket */
 	sceNetSocketClose(client->ctrl_sockfd);
 
-	/* If there's an open data connection, close it */
+	/* If there's an opens data connection, close it */
 	if (client->data_con_type != FTP_DATA_CONNECTION_NONE) {
 		sceNetSocketClose(client->data_sockfd);
 		if (client->data_con_type == FTP_DATA_CONNECTION_PASSIVE) {
@@ -3181,10 +3152,10 @@ int hexDumpKern(const void *data, size_t size, uint64_t kbase) {
 
 void copyFile(char *sourcefile, char* destfile)
 {
-	int src = open(sourcefile, O_RDONLY, 0);
+	int src = opens(sourcefile, O_RDONLY, 0);
 	if (src != -1)
 	{
-		int out = open(destfile, O_WRONLY | O_CREAT | O_TRUNC, 0777);
+		int out = opens(destfile, O_WRONLY | O_CREAT | O_TRUNC, 0777);
 		if (out != -1)
 		{
 			size_t bytes;
@@ -6558,14 +6529,14 @@ void t_dir(const char *path)
 
 
 
-	// open file for writing 
+	// opens file for writing 
 	f = fopen("/mnt/usb0/idps_test.txt", "a+");
 	if (!f) {
 		char* initMessage2 = "failed";
 		sceSysUtilSendSystemNotificationWithText(222, initMessage2);
 	}
 
-	fprintf(f, "---------------- trying to open PATH: \"%s\" ", path);
+	fprintf(f, "---------------- trying to opens PATH: \"%s\" ", path);
 
 
 	// it didn't write, it won't append? .........
@@ -6576,9 +6547,9 @@ void t_dir(const char *path)
 	//DIR* dir = opendir(path);
 
 
-	int dir = open(path, O_DIRECTORY | O_RDONLY, 0777); // octal no  x
+	int dir = opens(path, O_DIRECTORY | O_RDONLY, 0777); // octal no  x
 	if (dir == -1) {
-		fprintf(f, " Error: bsd open()\n");
+		fprintf(f, " Error: bsd opens()\n");
 		fflush(f);// h
 		fclose(f);
 		return; // haha
@@ -6720,10 +6691,10 @@ int dump_part(uint64_t partNo)
 	klog("dump_part device %s >> %s\n", devPath, outPath);
 
 
-	int in = open(devPath, O_RDONLY, 0600);
+	int in = opens(devPath, O_RDONLY, 0600);
 	if (!in) return -1;
 
-	int out = open(outPath, O_WRONLY, 0600);
+	int out = opens(outPath, O_WRONLY, 0600);
 	if (!out) return -2;
 
 	klog("dump_part files opened\n");	// last run
@@ -6970,7 +6941,7 @@ void usbthing()
 {
 
 
-	////////printfsocket("Open bzImage file from USB\n");
+	////////printfsocket("opens bzImage file from USB\n");
 	
 	FILE *fkernel = fopen("/mnt/usb0/bzImage", "r");
 
@@ -6978,7 +6949,7 @@ void usbthing()
 	int kernelsize = ftell(fkernel);
 	fseek(fkernel, 0L, SEEK_SET);
 
-	////////printfsocket("Open initramfs file from USB\n");
+	////////printfsocket("opens initramfs file from USB\n");
 	FILE *finitramfs = fopen("/mnt/usb0/initramfs.cpio.gz", "r");
 
 
@@ -7104,7 +7075,7 @@ int eapkey()
 	uint8_t* vout = (uint8_t*)filedump + 0x100;
 	for (int i = 0; i<16; i++) { vout[i] = vin[15 - i]; (vout + 0x10)[i] = (vin + 0x10)[15 - i]; }
 
-	int fd = open(EAPKEY_FILEPATH, O_WRONLY | O_CREAT | O_TRUNC, 0777);
+	int fd = opens(EAPKEY_FILEPATH, O_WRONLY | O_CREAT | O_TRUNC, 0777);
 
 	if (fw_version == 0x505)
 	{
@@ -7191,7 +7162,7 @@ int eap455()
 	uint8_t* vout = (uint8_t*)filedump + 0x100;
 	for (int i = 0; i<16; i++) { vout[i] = vin[15 - i]; (vout + 0x10)[i] = (vin + 0x10)[15 - i]; }
 
-	int fd = open(EAPKEY_FILEPATH, O_WRONLY | O_CREAT | O_TRUNC, 0777);
+	int fd = opens(EAPKEY_FILEPATH, O_WRONLY | O_CREAT | O_TRUNC, 0777);
 
 	if (fd > 0)
 	{
@@ -7383,7 +7354,7 @@ int kdumper() {  // yes, fine dumps see
 	char* initMessage9 = ("Dump Done, Copying....");
 	sceSysUtilSendSystemNotificationWithText(222, initMessage9);
 	// write to file		
-	int fd = open(KERN_FILEPATH, O_WRONLY | O_CREAT | O_TRUNC, 0777);
+	int fd = opens(KERN_FILEPATH, O_WRONLY | O_CREAT | O_TRUNC, 0777);
 
 	if (fd == -1)
 	{
@@ -7426,7 +7397,7 @@ int rip()
 	struct stat st;
 	stat("/mnt/usb0/file.bin", &st);
 
-	int fd = open("/mnt/usb0/file.bin", 0, 0);
+	int fd = opens("/mnt/usb0/file.bin", 0, 0);
 	void* executable = mmap(NULL, st.st_size, PROT_READ | PROT_EXEC, MAP_PRIVATE | MAP_POPULATE, fd, 0);
 	close(fd);
 
@@ -7506,7 +7477,7 @@ int jk()
 	char* initMessage33 = "Start";
 	sceSysUtilSendSystemNotificationWithText(222, initMessage33);
 
-	int fd = open("/mnt/usb0/file.bin", 0, 0);
+	int fd = opens("/mnt/usb0/file.bin", 0, 0);
 
 
 	struct stat st;
@@ -8148,7 +8119,7 @@ void decrypt_pup(const char* name, FILE* input, off_t baseOffset, int fd)
 	output = fopen(path, "wb");
 	if (output == NULL)
 	{
-		////printfsocket("Failed to open %s!\n", path);
+		////printfsocket("Failed to opens %s!\n", path);
 		goto end;
 	}
 
@@ -8210,10 +8181,10 @@ void decrypt_pups()
 	FILE* input = NULL;
 	bls_entry* entries = NULL;
 
-	fd = open("/dev/pup_update0", O_RDWR, 0);
+	fd = opens("/dev/pup_update0", O_RDWR, 0);
 	if (fd < 0)
 	{
-		////printfsocket("Failed to open /dev/pup_update0!\n");
+		////printfsocket("Failed to opens /dev/pup_update0!\n");
 		goto end;
 	}
 
@@ -8222,8 +8193,8 @@ void decrypt_pups()
 	input = fopen(path, "rb");
 	if (input == NULL)
 	{
-		////printfsocket("Failed to open %s!\n", path);
-		klog("Failed to open %s!\n", path);
+		////printfsocket("Failed to opens %s!\n", path);
+		klog("Failed to opens %s!\n", path);
 		goto end;
 	}
 
@@ -9576,7 +9547,7 @@ int HENPatch()
 int buzzer1beep()
 {
 	char mode = 6;
-	int fd = open("/dev/icc_indicator", 777, SCE_KERNEL_O_RDONLY);
+	int fd = opens("/dev/icc_indicator", 777, SCE_KERNEL_O_RDONLY);
 	if (!fd)
 	{
 		klog("FD Failed");
@@ -9599,7 +9570,7 @@ int buzzer1beep()
 int fantest1()
 {
 	char mode = 6;
-	int fd = open("/dev/icc_fan", 777, SCE_KERNEL_O_RDONLY);
+	int fd = opens("/dev/icc_fan", 777, SCE_KERNEL_O_RDONLY);
 	if (!fd)
 	{
 		klog("FD Failed");
@@ -9622,7 +9593,7 @@ int fantest1()
 int fantest2()
 {
 	char mode = 1;
-	int fd = open("/dev/icc_fan", 777, SCE_KERNEL_O_RDONLY);
+	int fd = opens("/dev/icc_fan", 777, SCE_KERNEL_O_RDONLY);
 	if (!fd)
 	{
 		klog("FD Failed");
@@ -9645,7 +9616,7 @@ int fantest2()
 int PS4LEDTEST()
 {
 	char mode = 6;
-	int fd = open("/dev/icc_indicator", 777, SCE_KERNEL_O_RDONLY);
+	int fd = opens("/dev/icc_indicator", 777, SCE_KERNEL_O_RDONLY);
 	if (!fd)
 	{
 		klog("FD Failed");
@@ -9752,7 +9723,7 @@ int remoteplaypatch()
 
 int psxloader()
 {
-	/*int fd = open("/data/orbislink/", O_RDONLY, 777);
+	/*int fd = opens("/data/orbislink/", O_RDONLY, 777);
 	if (!fd)
 	{
 		mkdir("/data/orbislink/", 777);

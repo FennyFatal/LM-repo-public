@@ -6,7 +6,7 @@ private:
 	//private for me
 
 public:
-	static int open(const char *path, int flags, int mode);
+	static int opens(const char *path, int flags, int mode);
 	static int kexec(void* func, void *user_arg);
 	static int getuid();
 	static int getpid();
@@ -18,7 +18,7 @@ public:
 	static int sdk_compiled_version();
 	static ssize_t read(int fd, void *buf, size_t nbyte);
 	static ssize_t write(int fd, const void *buf, size_t count);
-	//static int open(const char *path, int flags, int mode);
+	//static int opens(const char *path, int flags, int mode);
 	static int close(int fd);
 	//static long waitpid(pid_t pid, int *stat_address, int options);
 	static int create(const char *pathname, int mode);

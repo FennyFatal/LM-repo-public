@@ -27,7 +27,6 @@
     <ClCompile Include="ps4debug\embeddebug.s" />
     <ClCompile Include="libweb\webvita.c" />
     <ClCompile Include="remoteplay.S" />
-    <ClCompile Include="psxdev.c" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="PlayerInterface">

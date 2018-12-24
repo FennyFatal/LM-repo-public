@@ -91,7 +91,6 @@
     <ClCompile Include="pluginunjail.cpp" />
     <ClCompile Include="prx.cpp" />
     <ClCompile Include="ps4debug\embeddebug.s" />
-    <ClCompile Include="psxdev.c" />
     <ClCompile Include="remoteplay.S" />
     <ClCompile Include="syscall-9.s" />
     <ClCompile Include="syscall.cpp" />

@@ -3,7 +3,7 @@
 #include "syscall.h"
 #include "Modded_SDK\libPS4\include\types.h"
 
-int Sys::open(const char *path, int flags, int mode) 
+int Sys::opens(const char *path, int flags, int mode) 
 { 
 	return syscall(5, flags, mode); 
 }
