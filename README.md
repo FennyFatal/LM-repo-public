@@ -6,7 +6,7 @@
 
 ### Change the Solution and project paths!
 
-# Main Unity Scene is "fsmanager.unity" in Assets folder
+### Main Unity Scene is "fsmanager.unity" in Assets folder
 
 
 
