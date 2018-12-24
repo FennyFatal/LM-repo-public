@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 4194766468
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 35bcdf9d356faf06413faaab6366c94b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0a6a2c5ce4dda74496086b2754ac45d5
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/sprites/doorspinidle.anim
+Dependencies: []
