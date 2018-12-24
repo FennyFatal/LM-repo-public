@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{452D98B9-82AD-A0FC-EF7C-B9F9E8B75DE3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectGenerator>VSTU</UnityProjectGenerator>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
+    <UnityBuildTarget>PS4:31</UnityBuildTarget>
+    <UnityVersion>2017.2.0p2</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;ENABLE_AUDIO;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_PS4;UNITY_PS4;UNITY_PS4_API;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_WWW;DEBUGGER_LISTENS_FIXED_PORT;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_SUBSTANCE;ENABLE_UNITYWEBREQUEST;ENABLE_LOG_MIXED_STACKTRACE;GFX_HAS_OBJECT_LABEL;ENABLE_VR;ENABLE_SPATIALTRACKING;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;CT_FB</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_2_0;UNITY_2017_2;UNITY_2017;ENABLE_AUDIO;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;PLATFORM_PS4;UNITY_PS4;UNITY_PS4_API;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_WWW;DEBUGGER_LISTENS_FIXED_PORT;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_SUBSTANCE;ENABLE_UNITYWEBREQUEST;ENABLE_LOG_MIXED_STACKTRACE;GFX_HAS_OBJECT_LABEL;ENABLE_VR;ENABLE_SPATIALTRACKING;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;CT_FB</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WebModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.WebModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/PS4Player/Tools/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIAutomation">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="PS4BEVideo">
+      <HintPath>Assets/Plugins/PS4BEVideo.dll</HintPath>
+    </Reference>
+    <Reference Include="CTCommon">
+      <HintPath>Assets/Plugins/crosstales/Common/Scripts/CTCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Ookii.Dialogs">
+      <HintPath>Assets/Plugins/crosstales/FileBrowser/Native/Windows/Ookii.Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>Assets/Plugins/crosstales/FileBrowser/Native/Windows/System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="SonyPS4CommonDialog">
+      <HintPath>Assets/SonyAssemblies/SonyPS4CommonDialog.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/sethk/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:/Users/sethk/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Plugins\APlus Assets Explorer(Free)\Scripts\Reflection\GUIClip.cs" />
+    <Compile Include="Assets\Plugins\APlus Assets Explorer(Free)\Scripts\Reflection\ReflectionUtils.cs" />
+    <Compile Include="Assets\Plugins\APlus Assets Explorer(Free)\Scripts\Reflection\TextureUtillity.cs" />
+    <Compile Include="Assets\Plugins\APlus Assets Explorer(Free)\Scripts\Reflection\Webview.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\Scripts\Util\BackgroundController.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\Scripts\Util\PlatformController.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\Social.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\StaticManager.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\UIDrag.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\UIFocus.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\UIHint.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\UIResize.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\UIWindowManager.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\Util\AudioFilterController.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\Util\AudioSourceController.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\Util\FPSDisplay.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\Util\ScrollRectHandler.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\Util\TakeScreenshot.cs" />
+    <Compile Include="Assets\Plugins\crosstales\Common\UI\Scripts\WindowManager.cs" />
+    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Demo\Scripts\Examples.cs" />
+    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Demo\Scripts\GUIMain.cs" />
+    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Demo\Scripts\GUIScenes.cs" />
+    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\FileBrowser.cs" />
+    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Util\Config.cs" />
+    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Util\Constants.cs" />
+    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Util\Helper.cs" />
+    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Wrapper\FileBrowserBase.cs" />
+    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Wrapper\FileBrowserEditor.cs" />
+    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Wrapper\FileBrowserGeneric.cs" />
+    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Wrapper\FileBrowserMac.cs" />
+    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Wrapper\FileBrowserWindows.cs" />
+    <Compile Include="Assets\Plugins\crosstales\FileBrowser\Scripts\Wrapper\IFileBrowser.cs" />
+    <Compile Include="Assets\Plugins\SimpleFileBrowser\Android\FBPermissionCallbackAndroid.cs" />
+    <Compile Include="Assets\Plugins\SimpleFileBrowser\Scripts\FileBrowser.cs" />
+    <Compile Include="Assets\Plugins\SimpleFileBrowser\Scripts\FileBrowserItem.cs" />
+    <Compile Include="Assets\Plugins\SimpleFileBrowser\Scripts\FileBrowserMovement.cs" />
+    <Compile Include="Assets\Plugins\SimpleFileBrowser\Scripts\FileBrowserQuickLink.cs" />
+    <Compile Include="Assets\Plugins\SimpleFileBrowser\Scripts\SimpleRecycledListView\IListViewAdapter.cs" />
+    <Compile Include="Assets\Plugins\SimpleFileBrowser\Scripts\SimpleRecycledListView\ListItem.cs" />
+    <Compile Include="Assets\Plugins\SimpleFileBrowser\Scripts\SimpleRecycledListView\RecycledListView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\FMVTexture.shader" />
+    <None Include="Assets\Plugins\SimpleFileBrowser\README.txt" />
+    <None Include="Assets\Plugins\crosstales\Common\README.txt" />
+    <None Include="Assets\Plugins\crosstales\Common\UI\Colors.txt" />
+    <None Include="Assets\Plugins\crosstales\FileBrowser\Documentation\VERSIONS.txt" />
+    <None Include="Assets\Plugins\crosstales\FileBrowser\Documentation\id\62455202-c9ff-4b04-b6c3-1d4b836a5fff.txt" />
+    <None Include="Assets\Plugins\crosstales\FileBrowser\README.txt" />
+    <None Include="Assets\Plugins\readme_e.txt" />
+    <None Include="Assets\Plugins\readme_j.txt" />
+    <None Include="Assets\SonyExamples\PS4\CommonDialog\SonyPS4CommonDialogReadme.txt" />
+    <None Include="Assets\SonyExamples\PS4\Input+\README.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>
