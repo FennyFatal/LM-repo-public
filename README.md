@@ -52,6 +52,8 @@
 - VS 2015
 - FSELF Tools
 
+### No one share any of this with CFWProphet.. thnx 
+
 Credits to
 
 CelesteBlue and Others whom have worked on the 4.74 stuff
