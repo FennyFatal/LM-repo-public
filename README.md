@@ -6,6 +6,8 @@
 
 ### Change the Solution and project paths!
 
+# Main Unity Scene is "fsmanager.unity" in Assets folder
+
 
 
 ![alt text](https://github.com/LightningMods/PS4-FS-Manager/blob/master/FS.png)
